@@ -1,0 +1,9 @@
+{
+  "name": "harbor-live-departures",
+  "private": true,
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
