@@ -9,3 +9,6 @@ Run `npm start`, then open http://localhost:3200 and click the button.
 Expected: three destinations, final “3 Sendungen vollständig”, first chunk arriving
 before the final response. `/health` identifies the release; missing routes return404.
 All data is synthetic; no persistence, credentials, polling, or external calls.
+
+Release 2 adds `/events`: proper SSE data frames with no-transform and
+X-Accel-Buffering:no, for comparison against the NDJSON stream. Both are finite.
